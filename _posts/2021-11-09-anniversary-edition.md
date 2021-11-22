@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: null
 title:  "Anniversary Edition and Progress Updates"
 ---
 
