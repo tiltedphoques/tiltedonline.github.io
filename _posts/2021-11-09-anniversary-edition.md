@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Anniversary Edition and Progress Updates"
 ---
 
 Hey everyone,
