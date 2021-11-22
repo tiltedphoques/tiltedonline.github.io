@@ -18,7 +18,7 @@ layout: default
 		<p>We are always working hard to develop and improve our mod. Below you'll be able to view all of our latest posts and announcements - check back in regularly to stay up to date with our progress!</p>
 		<div id="post">
 			<h1>{{ site.posts.first.title }}</h1>
-			<h5>{{ site.posts.first.date }}</h5>
+			<h5>{{ site.posts.first.date | date: "%-d %B %Y" }}</h5>
 			<p>{{ site.posts.first }}</p>
 		</div>
 	</article>
