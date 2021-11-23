@@ -19,7 +19,8 @@
 <!-- move this script later, only here as a hack for demo purposes -->
 <script>
 $("#bg > div:gt(0)").hide();
-setInterval(function() { 
+setSlide();
+function setSlide() { 
   $('#bg > div:first')
   .fadeOut(1000)
   .next()
@@ -27,5 +28,6 @@ setInterval(function() {
   .fadeIn(1000)
   .end()
   .appendTo('#bg');
-}, 5000);
+  setTimeout(setSlide, 5000);
+}
 </script>
