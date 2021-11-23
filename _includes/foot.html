@@ -1,7 +1,7 @@
 <!-- BG -->
 <div id="bg">
   <div>
-    <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+    <img src="images/backgrounds/bg.png">
   </div>
   <div>
     <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
@@ -25,9 +25,10 @@
 $("#bg > div:gt(0)").hide();
 setInterval(function() { 
   $('#bg > div:first')
-  .fadeOut(2000)
+  .fadeOut(1000)
   .next()
-  .fadeIn(2000)
+  .delay(1000)
+  .fadeIn(1000)
   .end()
   .appendTo('#bg');
 }, 5000);
