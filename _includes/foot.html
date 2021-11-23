@@ -2,7 +2,7 @@
 <div id="bg">
   {% for image in site.static_files %}
     {% if image.path contains 'images/backgrounds' %}
-        <div><img src="{{ site.baseurl }}{{ image.path }}"/></div>
+        <div><img style="display:none;" src="{{ site.baseurl }}{{ image.path }}"/></div>
     {% endif %}
   {% endfor %}
 </div>
@@ -18,17 +18,18 @@
 
 <!-- move this script later, only here as a hack for demo purposes -->
 <script>
-$("#bg > div").hide().delay(1000);
-$("#bg > div:first").show();
-setSlide();
-function setSlide() { 
-  $('#bg > div:first')
-  .fadeOut(1000)
-  .next()
-  .delay(1000)
-  .fadeIn(1000)
-  .end()
-  .appendTo('#bg');
-  setTimeout(setSlide, 5000);
-}
+$(window).load(function(){
+  window.setTimeout(function(){ $("#bg > div:first").show();}, 1000);
+  setSlide();
+  function setSlide() { 
+    $('#bg > div:first')
+    .fadeOut(1000)
+    .next()
+    .delay(1000)
+    .fadeIn(1000)
+    .end()
+    .appendTo('#bg');
+    setTimeout(setSlide, 5000);
+  }
+})
 </script>
