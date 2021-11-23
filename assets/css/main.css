@@ -1322,7 +1322,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 3rem 2rem 2.5rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1336,6 +1336,7 @@ input, select, textarea {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
+				margin-bottom: 1.5rem;
 			}
 
 		#header nav ul {
