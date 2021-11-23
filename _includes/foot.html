@@ -1,14 +1,14 @@
+---
+layout: null
+---
+
 <!-- BG -->
 <div id="bg">
-  <div>
-    <img src="images/backgrounds/bg.png">
-  </div>
-  <div>
-    <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
-  </div>
-  <div>
-    test
-  </div>
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/backgrounds' %}
+        <div><img src="{{ site.baseurl }}{{ image.path }}"/></div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <!-- Ronya, Amina, and Richard are absolute poggies amen-->
