@@ -18,7 +18,7 @@
 
 <!-- move this script later, only here as a hack for demo purposes -->
 <script>
-$(window).load(function(){
+$(window).on('load', function(){
   setTimeout(function(){ $("#bg > div:first").show();}, 1000);
   setSlide();
   function setSlide() { 
