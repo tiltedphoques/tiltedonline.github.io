@@ -18,6 +18,6 @@ In terms of gameplay features, we are fairly happy with what we have so far. In 
 As always, please remember that the mod will be ready when it's ready, and we can not give any estimations as to when we will release the mod, even though it might seem like the mod is practically finished (yes, we see you guys reacting with "soon" emojis in git-dev :p). You can view the list of completed features and planned features [here](https://wiki.tiltedphoques.com/tilted-online/features/tilted-online), though this list is subject to change.
 
 Much love,
-The Together Team.
+The Together Team
 
 P.S.: here's a little [sneak peak](https://gfycat.com/infamoustornfurseal) into projectile sync. It syncs pixel perfectly on all clients! :)
