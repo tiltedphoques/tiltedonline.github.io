@@ -1,10 +1,5 @@
 <!-- BG -->
 <div id="bg">
-  {% for image in site.static_files %}
-    {% if image.path contains 'images/backgrounds' %}
-        <div><img src="{{ site.baseurl }}{{ image.path }}"/></div>
-    {% endif %}
-  {% endfor %}
 </div>
 
 <!-- Ronya, Amina, and Richard are absolute poggies amen-->
@@ -18,19 +13,16 @@
 
 <!-- move this script later, only here as a hack for demo purposes -->
 <script>
-$(window).on('load', function(){
-  $("#bg > div").hide();
-  setTimeout(function(){ $("#bg > div:first").fadeIn(1000);}, 1000);
-  setSlide();
-  function setSlide() { 
-    $('#bg > div:first')
-    .fadeOut(1000)
-    .next()
-    .delay(1000)
-    .fadeIn(1000)
-    .end()
-    .appendTo('#bg');
-    setTimeout(setSlide, 5000);
-  }
+$(document).ready(function(){
+  var bgArray = [
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/backgrounds' %}
+        "{{ image.name }}",
+    {% endif %}
+  {% endfor %}
+  ];
+  var bgImage = bgArray[Math.floor(Math.random() * bgArray.length)];
+  $('#bg').css('background-image', 'images/backgrounds/'+bgImage);
+  $('#image-credit').text(bgImage.substring(0,bgImage.lastIndexOf('.')).toUpperCase());
 })
 </script>
