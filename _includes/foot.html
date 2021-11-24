@@ -16,7 +16,7 @@
 $(document).ready(function(){
   var bgArray = [{% for image in site.static_files %}{% if image.path contains 'images/backgrounds' %}"{{ image.name }}",{% endif %}{% endfor %}];
   var bgImage = bgArray[Math.floor(Math.random() * bgArray.length)];
-  $('#bg').attr('background-image', 'images/backgrounds/'+bgImage);
+  $('#bg > img:first').attr('src', 'images/backgrounds/'+bgImage);
   $('#image-credit').text(bgImage.substring(0,bgImage.lastIndexOf('.')).toUpperCase());
 })
 </script>
