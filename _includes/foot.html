@@ -1,7 +1,7 @@
 <!-- BG -->
 <div id="bg">
-  <img src="images/backgrounds/community.png" />
-  <img src="images/backgrounds/overlay.png" style="z-index:2"/>
+  <img id="bg-img" src="images/backgrounds/community.png" />
+  <img id="bg-overlay" src="images/overlay.png" />
 </div>
 
 <!-- Scripts -->
@@ -16,7 +16,7 @@
 $(document).ready(function(){
   var bgArray = [{% for image in site.static_files %}{% if image.path contains 'images/backgrounds' %}"{{ image.name }}",{% endif %}{% endfor %}];
   var bgImage = bgArray[Math.floor(Math.random() * bgArray.length)];
-  $('#bg > img:first').attr('src', 'images/backgrounds/'+bgImage);
+  $('#bg-img').attr('src', 'images/backgrounds/'+bgImage);
   $('#image-credit').text(bgImage.substring(0,bgImage.lastIndexOf('.')).toUpperCase());
 })
 </script>
