@@ -1112,22 +1112,22 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-		-moz-transform: scale(1.125);
-		-webkit-transform: scale(1.125);
-		-ms-transform: scale(1.125);
-		transform: scale(1.125);
-		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-image: url("../../images/backgrounds/bg.png");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		z-index: 1;
 	}
+
+		#bg img {
+			-moz-transform: scale(1.125);
+			-webkit-transform: scale(1.125);
+			-ms-transform: scale(1.125);
+			transform: scale(1.125);
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
 
 		body.is-preload #bg {
 			background-color: #000000;
