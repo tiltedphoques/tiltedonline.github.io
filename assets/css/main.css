@@ -701,7 +701,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 2.5rem 0 2rem;
 			width: 100%;
 		}
 
@@ -739,7 +739,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1.5rem 0;
 		padding-left: 1em;
 	}
 
@@ -759,7 +759,6 @@ input, select, textarea {
 
 				ul.alt li:last-child {
 					border-bottom: solid 1px #ffffff;
-					padding: 1em 0;
 				}
 
 			ul.alt h2, h5 {
@@ -1529,7 +1528,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			padding: 4.5rem 2.5rem 1rem 2.5rem ;
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
