@@ -1539,7 +1539,11 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-			#main article.active {
+			#main article .post {
+				width: 100%;
+			}
+
+			#main article .active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
