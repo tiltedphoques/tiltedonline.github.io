@@ -29,7 +29,7 @@ layout: default
 	</article>
 	{% for post in site.posts %}
 	<article id="news-{{ post.title | slugify }}">
-		<h2 class="major">{{ post.title }}</h2>
+		<h2>{{ post.title }}</h2>
 		<h5>{{ post.date | date: "%-d %B %Y" }}</h5>
 		<p>{{ post }}</p>
 	</article>
