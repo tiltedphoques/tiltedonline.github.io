@@ -1,8 +1,6 @@
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+---
+layout: none
+---
 
 (function($) {
 
@@ -24,6 +22,14 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+	// Load a random background image.
+		$(document).ready(function(){
+			var bgArray = [{% for image in site.static_files %}{% if image.path contains 'images/backgrounds' %}"{{ image.name }}",{% endif %}{% endfor %}];
+			var bgImage = bgArray[Math.floor(Math.random() * bgArray.length)];
+			$('#bg-img').attr('src', 'images/backgrounds/'+bgImage);
+			$('#image-credit').text(bgImage.substring(0,bgImage.lastIndexOf('.')).toUpperCase());
+		});
+	
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
