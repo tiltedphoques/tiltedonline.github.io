@@ -1540,7 +1540,7 @@ input, select, textarea {
 		}
 
 			#main article.post {
-				width: 100%;
+				width: 80rem;
 			}
 
 			#main article.active {
