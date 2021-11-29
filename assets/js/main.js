@@ -1,4 +1,4 @@
----
+0000000000000000000000000---
 layout: none
 ---
 
@@ -296,6 +296,15 @@ layout: none
 			$main_articles.each(function() {
 
 				var $this = $(this);
+				
+				// Back arrow for posts.
+					if ($this.hasClass("post")) {
+						$('<div class="back">Back</div>')
+							.appendTo($this)
+							.on('click', function() {
+								location.hash = '#news';
+							});
+					}
 
 				// Close.
 					$('<div class="close">Close</div>')
