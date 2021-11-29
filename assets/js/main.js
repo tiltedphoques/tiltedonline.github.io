@@ -299,7 +299,7 @@ layout: none
 				
 				// Back arrow for posts.
 					if ($this.hasClass("post")) {
-						$('<div class="back">Back</div>')
+						$('<div class="nav-button back">Back</div>')
 							.appendTo($this)
 							.on('click', function() {
 								location.hash = '#news';
@@ -307,7 +307,7 @@ layout: none
 					}
 
 				// Close.
-					$('<div class="close">Close</div>')
+					$('<div class="nav-button close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
