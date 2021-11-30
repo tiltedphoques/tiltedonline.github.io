@@ -1339,6 +1339,7 @@ input, select, textarea {
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
+			font-weight: bold;
 		}
 
 			#header nav ul li {
