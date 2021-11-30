@@ -1544,7 +1544,7 @@ input, select, textarea {
 			}
 
 				#main article.post img {
-					width: 100%;
+					max-width: 100%;
 				}
 
 			#main article.active {
