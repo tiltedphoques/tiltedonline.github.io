@@ -1551,7 +1551,7 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-			#main article.nav-button {
+			#main article .nav-button {
 				display: block;
 				position: absolute;
 				top: 0;
