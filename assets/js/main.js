@@ -299,6 +299,9 @@ layout: none
 				
 				// Image rendering and back arrow for posts.
 					if ($this.hasClass("post")) {
+						console.log($this);
+						console.log($this.children());
+						console.log($this.children("p > img"));
 						$this.children("p > img").addClass("image fit");
 						$('<div class="nav-button back">Back</div>')
 							.appendTo($this)
